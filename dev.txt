@@ -2,3 +2,30 @@ dev.txt
 10_test.txt
 20_test.txt
 30_test.txt
+sasaki.hajime.br@gmail.com
+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
+git branch 40_test        新しいブランチを作成
+
+git checkout 40_test
+
+
+git branch -a           現在の作業ブランチ確認
+
+git status
+
+git add .               変更箇所一括
+
+//gitで日本語ファイル名を表示する方法
+git config --global core.quotepath false
+git diff --cached --name-only --diff-filter=ACMR
+#git diff --cached
+#git diff --staged  qで抜ける
+
+git config --global user.email "hajime.sasaki@konicaminolta.com"
+git config --global user.name "hajime.sasaki@konicaminolta.com"
+
+git commit -m "40_test テスト"
+
+
+git push origin 40_test
+
